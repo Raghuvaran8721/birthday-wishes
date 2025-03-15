@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Special Birthday Wish</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💖 Make a Special Birthday Wish 💖</h1>
+        <form action="/" method="POST">
+            <input type="text" name="name" placeholder="Enter Name" required><br>
+            <textarea name="message" placeholder="Enter Your Heartfelt Message" required></textarea><br>
+            <button type="submit">🎁 Generate Wish</button>
+        </form>
+    </div>
+</body>
+</html>

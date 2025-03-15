@@ -1,0 +1,48 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px gray;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #ff007f;
+    font-size: 28px;
+}
+
+.birthday-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px pink;
+    animation: fadeIn 2s ease-in-out;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    display: inline-block;
+    background: #ff007f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday {{ name }}! 🎂</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='balloons.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='fireworks.js') }}" defer></script>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='birthday_music.mp3') }}" type="audio/mpeg">
+    </audio>
+
+    <div class="birthday-card">
+        <h1>🎉 Happy Birthday, {{ name }}! 🎂</h1>
+        <p>{{ message }}</p>
+        <p>💖 Wishing you joy, love, and happiness! 💖</p>
+        <a href="/">🎁 Send Another Wish</a>
+    </div>
+</body>
+</html>
